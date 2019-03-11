@@ -1,8 +1,8 @@
 <?php
-class USer{
+class User{
     public $id;
     public $firstname;
-    public $name;
+    public $username;
     public $email;
 }
 ?>

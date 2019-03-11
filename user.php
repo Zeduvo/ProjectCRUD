@@ -18,11 +18,10 @@ $USER = PostUser();
     <script src="user.js"></script>
 </head>
 <body>
-    <p>Firstname: <input id="firstname" type="text"></p>
-    <p>Name: <input id="username" type="text"></p>
-    <p>Email: <input id="email" type="text"></p>
-    <input onclick="create_user();" type="submit" value="Create">
-     
+        <p>Firstname: <input id="firstname" type="text"></p>
+        <p>Name: <input id="username" type="text"></p>
+        <p>Email: <input id="email" type="text"></p>
+        <input onclick="create_user();" type="submit" value="Create">
     <br><br>
     <h3>Users</h3>
     <table>
@@ -32,6 +31,7 @@ $USER = PostUser();
                 <td><?php echo $USERS['firstname']; ?></td>        
                 <td><?php echo $USERS['username']; ?></td> 
                 <td><input type="button" value="Read" onclick="read_user(<?php echo $USERS['id']; ?>)" ></td>
+                <td><input type="button" value="Update" onclick="upload_user(<?php echo $USERS['id']; ?>)" ></td>
                 <td><input type="button" value="Delete" onclick="delete_user(<?php echo $USERS['id']; ?>)" ></td>
             </tr> 
             <?php endforeach; ?>
